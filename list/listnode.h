@@ -1,4 +1,5 @@
 typedef int Rank;
+#define ListNodePosi(T) ListNode<T>*
 template<typename T> struct ListNode 
 {
     // 成员
