@@ -1,3 +1,4 @@
+typedef int Rank;
 template<typename T> struct ListNode 
 {
     // 成员
