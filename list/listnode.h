@@ -12,7 +12,7 @@ template<typename T> struct ListNode
 
     // 操作借口
     ListNodePosi(T)insertAsPred(T const& e);//紧靠当前节点之前插入新节点
-    ListNodePosi(T)insertAsSucc(T const& e);//紧靠当前节点之后插入新节点 sadfsad
+    ListNodePosi(T)insertAsSucc(T const& e);//紧靠当前节点之后插入新节点
 };
 
 
