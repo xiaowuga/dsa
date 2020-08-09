@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/xiaowuga/Desktop/github/dsa/coordin.h
+
+/Users/xiaowuga/Desktop/github/dsa/file1.cpp
+iostream
+-
+coordin.h
+/Users/xiaowuga/Desktop/github/dsa/coordin.h
+
+/Users/xiaowuga/Desktop/github/dsa/file2.cpp
+iostream
+-
+coordin.h
+/Users/xiaowuga/Desktop/github/dsa/coordin.h
+

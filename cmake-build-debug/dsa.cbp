@@ -37,14 +37,13 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/xiaowuga/Desktop/github/dsa/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="dsa">
-				<Option output="/Users/xiaowuga/Desktop/github/dsa/cmake-build-debug/dsa" prefix_auto="0" extension_auto="0"/>
+			<Target title="main">
+				<Option output="/Users/xiaowuga/Desktop/github/dsa/cmake-build-debug/main" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/xiaowuga/Desktop/github/dsa/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/xiaowuga/Desktop/github/dsa/list"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
@@ -53,20 +52,19 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/xiaowuga/Desktop/github/dsa/cmake-build-debug/Makefile&quot;  VERBOSE=1 dsa"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/xiaowuga/Desktop/github/dsa/cmake-build-debug/Makefile&quot;  VERBOSE=1 main"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/xiaowuga/Desktop/github/dsa/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/xiaowuga/Desktop/github/dsa/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/xiaowuga/Desktop/github/dsa/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="dsa/fast">
-				<Option output="/Users/xiaowuga/Desktop/github/dsa/cmake-build-debug/dsa" prefix_auto="0" extension_auto="0"/>
+			<Target title="main/fast">
+				<Option output="/Users/xiaowuga/Desktop/github/dsa/cmake-build-debug/main" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/xiaowuga/Desktop/github/dsa/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/xiaowuga/Desktop/github/dsa/list"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
@@ -75,33 +73,21 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/xiaowuga/Desktop/github/dsa/cmake-build-debug/Makefile&quot;  VERBOSE=1 dsa/fast"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/xiaowuga/Desktop/github/dsa/cmake-build-debug/Makefile&quot;  VERBOSE=1 main/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/xiaowuga/Desktop/github/dsa/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/xiaowuga/Desktop/github/dsa/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/xiaowuga/Desktop/github/dsa/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/xiaowuga/Desktop/github/dsa/list/list.h">
-			<Option target="dsa"/>
+		<Unit filename="/Users/xiaowuga/Desktop/github/dsa/coordin.h">
+			<Option target="main"/>
 		</Unit>
-		<Unit filename="/Users/xiaowuga/Desktop/github/dsa/list/list_bracket.h">
-			<Option target="dsa"/>
+		<Unit filename="/Users/xiaowuga/Desktop/github/dsa/file1.cpp">
+			<Option target="main"/>
 		</Unit>
-		<Unit filename="/Users/xiaowuga/Desktop/github/dsa/list/list_clear.h">
-			<Option target="dsa"/>
-		</Unit>
-		<Unit filename="/Users/xiaowuga/Desktop/github/dsa/list/list_constructor_by_copying.h">
-			<Option target="dsa"/>
-		</Unit>
-		<Unit filename="/Users/xiaowuga/Desktop/github/dsa/list/listnode.h">
-			<Option target="dsa"/>
-		</Unit>
-		<Unit filename="/Users/xiaowuga/Desktop/github/dsa/list/listnode_insertaspred.h">
-			<Option target="dsa"/>
-		</Unit>
-		<Unit filename="/Users/xiaowuga/Desktop/github/dsa/list/listnode_insertassucc.h">
-			<Option target="dsa"/>
+		<Unit filename="/Users/xiaowuga/Desktop/github/dsa/file2.cpp">
+			<Option target="main"/>
 		</Unit>
 		<Unit filename="/Users/xiaowuga/Desktop/github/dsa/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

@@ -111,17 +111,71 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named dsa
+# Target rules for targets named main
 
 # Build rule for target.
-dsa: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 dsa
-.PHONY : dsa
+main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-dsa/fast:
-	$(MAKE) -f CMakeFiles/dsa.dir/build.make CMakeFiles/dsa.dir/build
-.PHONY : dsa/fast
+main/fast:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+file1.o: file1.cpp.o
+
+.PHONY : file1.o
+
+# target to build an object file
+file1.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/file1.cpp.o
+.PHONY : file1.cpp.o
+
+file1.i: file1.cpp.i
+
+.PHONY : file1.i
+
+# target to preprocess a source file
+file1.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/file1.cpp.i
+.PHONY : file1.cpp.i
+
+file1.s: file1.cpp.s
+
+.PHONY : file1.s
+
+# target to generate assembly for a file
+file1.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/file1.cpp.s
+.PHONY : file1.cpp.s
+
+file2.o: file2.cpp.o
+
+.PHONY : file2.o
+
+# target to build an object file
+file2.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/file2.cpp.o
+.PHONY : file2.cpp.o
+
+file2.i: file2.cpp.i
+
+.PHONY : file2.i
+
+# target to preprocess a source file
+file2.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/file2.cpp.i
+.PHONY : file2.cpp.i
+
+file2.s: file2.cpp.s
+
+.PHONY : file2.s
+
+# target to generate assembly for a file
+file2.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/file2.cpp.s
+.PHONY : file2.cpp.s
 
 # Help Target
 help:
@@ -131,7 +185,13 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... dsa"
+	@echo "... main"
+	@echo "... file1.o"
+	@echo "... file1.i"
+	@echo "... file1.s"
+	@echo "... file2.o"
+	@echo "... file2.i"
+	@echo "... file2.s"
 .PHONY : help
 
 
