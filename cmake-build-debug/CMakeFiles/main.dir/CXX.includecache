@@ -6,17 +6,39 @@
 
 #IncludeRegexTransform: 
 
-/Users/xiaowuga/Desktop/github/dsa/coordin.h
+/Users/xiaowuga/Desktop/github/dsa/list/clear.cpp
 
-/Users/xiaowuga/Desktop/github/dsa/file1.cpp
+/Users/xiaowuga/Desktop/github/dsa/list/destructor.cpp
+
+/Users/xiaowuga/Desktop/github/dsa/list/initialize.cpp
+
+/Users/xiaowuga/Desktop/github/dsa/list/insert.cpp
+
+/Users/xiaowuga/Desktop/github/dsa/list/insertAsPred.cpp
+
+/Users/xiaowuga/Desktop/github/dsa/list/insertAsSucc.cpp
+
+/Users/xiaowuga/Desktop/github/dsa/list/list.h
+insert.cpp
+/Users/xiaowuga/Desktop/github/dsa/list/insert.cpp
+initialize.cpp
+/Users/xiaowuga/Desktop/github/dsa/list/initialize.cpp
+insertAsPred.cpp
+/Users/xiaowuga/Desktop/github/dsa/list/insertAsPred.cpp
+insertAsSucc.cpp
+/Users/xiaowuga/Desktop/github/dsa/list/insertAsSucc.cpp
+destructor.cpp
+/Users/xiaowuga/Desktop/github/dsa/list/destructor.cpp
+clear.cpp
+/Users/xiaowuga/Desktop/github/dsa/list/clear.cpp
+remove.cpp
+/Users/xiaowuga/Desktop/github/dsa/list/remove.cpp
+
+/Users/xiaowuga/Desktop/github/dsa/list/remove.cpp
+
+/Users/xiaowuga/Desktop/github/dsa/main.cpp
 iostream
 -
-coordin.h
-/Users/xiaowuga/Desktop/github/dsa/coordin.h
-
-/Users/xiaowuga/Desktop/github/dsa/file2.cpp
-iostream
--
-coordin.h
-/Users/xiaowuga/Desktop/github/dsa/coordin.h
+list/list.h
+/Users/xiaowuga/Desktop/github/dsa/list/list.h
 

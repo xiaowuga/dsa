@@ -7,7 +7,6 @@ add_executable(main)
 
 target_sources(main
 PUBLIC
-    coordin.h
-    file1.cpp
-    file2.cpp
+        list
+        main.cpp
 )
