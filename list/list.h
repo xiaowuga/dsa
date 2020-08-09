@@ -1,13 +1,12 @@
 #include "listnode.h"
 
-template <typename T>class List
-{
+template <typename T>class List {
     private:
         int _size;
         ListNodePosi(T)header;
         ListNodePosi(T)trailer;
     
-    protested:
+    protected:
         void init();
         int clear();
         void copyNodes(ListNodePosi(T), int);
@@ -30,17 +29,14 @@ template <typename T>class List
         T& operator[](Rank r) const;
         ListNodePosi(T) first() const { return header->succ;}
         ListNodePosi(T) last() const { return trailer->pred;}
-        bool volid(ListNodePosi(T)p)
-        {
+        bool volid(ListNodePosi(T)p) {
             return p && (trailer != p) && (header != p);
         }
-        ListNodePosi(T) find(T const & e) const 
-        {
+        ListNodePosi(T) find(T const & e) const {
             return find(e, _size, trailer);
         }
-        ListNodePosi(T) find(T const& e, int n ListNodePosi(T)p) const; 
-        ListNodePosi(T) search(T const& e) const
-        {
+        ListNodePosi(T) find(T const& e, int n, ListNodePosi(T)p) const;
+        ListNodePosi(T) search(T const& e) const {
             return search(e, _size, trailer);
         }
         ListNodePosi(T) search(T const& e, int n, ListNodePosi(T)p) const;
@@ -52,12 +48,10 @@ template <typename T>class List
         ListNodePosi(T) insertA(ListNodePosi(T)p, T const& e);
         ListNodePosi(T) insertB(ListNodePosi(T)p, T const& e);
         T remove(ListNodePosi(T)p);
-        void merge(List<T>& L)
-        {
-            merge(first(), size, L, L.first, L.size);
+        void merge(List<T>& L) {
+            merge(first(), _size, L, L.first, L.size);
         }
-        void sort()
-        {
+        void sort() {
             sort(first(), _size);
         }
         int deduplicate();//无序去重

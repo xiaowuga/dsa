@@ -103,9 +103,6 @@
 		<Unit filename="/Users/xiaowuga/Desktop/github/dsa/list/listnode_insertassucc.h">
 			<Option target="dsa"/>
 		</Unit>
-		<Unit filename="/Users/xiaowuga/Desktop/github/dsa/main.cpp">
-			<Option target="dsa"/>
-		</Unit>
 		<Unit filename="/Users/xiaowuga/Desktop/github/dsa/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
