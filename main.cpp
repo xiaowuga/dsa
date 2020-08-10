@@ -7,12 +7,19 @@
 using namespace std;
 void test() {
     List<int>list;
-    for(int i = 0; i < 10; i++) {
+    for(int i = 0; i < 15; i++) {
         list.insertAsFirst(i);
     }
-    for(ListNodePosi(int)p = list.begin(); p != list.end(); p = p->succ) {
-        cout << p->data << endl;
+    for(ListNodePosi(int) p = list.begin(); p != list.end(); p = p->succ) {
+        cout << p -> data << ' ' ;
     }
+    cout << endl;
+    list.mergeSort();
+//    cout << (list.begin()->data) << endl;
+    for(ListNodePosi(int) p = list.begin(); p != list.end(); p = p->succ) {
+        cout << p -> data << ' ' ;
+    }
+    cout << endl;
 }
 int main() {
     test();

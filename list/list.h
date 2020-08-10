@@ -37,7 +37,6 @@ protected:
     int clear();
     void copyNodes(ListNodePosi(T), int);
     void merge(ListNodePosi(T)&, int, List<T>&, ListNodePosi(T), int);
-    void mergeSort(ListNodePosi(T)&, int);
     void selectionSort(ListNodePosi(T), int);
     void insertSort(ListNodePosi(T), int);
 
@@ -59,7 +58,9 @@ public:
     bool empty() const { return _size <= 0;}
     T& operator[](int r) const;
     ListNodePosi(T) begin() const { return header->succ;}
+    ListNodePosi(T) rbegin() const { return trailer->pred;}
     ListNodePosi(T) end() const { return trailer;}
+    ListNodePosi(T) rend() const { return header;}
     bool volid(ListNodePosi(T)p) {
         return p && (trailer != p) && (header != p);
     }
@@ -72,18 +73,19 @@ public:
     }
     ListNodePosi(T) search(T const& e, int n, ListNodePosi(T)p) const;
     ListNodePosi(T) selectMax(ListNodePosi(T)p, int n);
-    ListNodePosi(T) selectMax(){return selectMax(header->succ, _size);}
+    ListNodePosi(T) selectMax(){return selectMax(begin(), _size);}
     // 可写访问接口
     ListNodePosi(T) insertAsFirst(T const& e);
     ListNodePosi(T) insertAsLast(T const& e);
     ListNodePosi(T) insertA(ListNodePosi(T) p, T const& e);
     ListNodePosi(T) insertB(ListNodePosi(T) p, T const& e);
     T remove(ListNodePosi(T)p);
+    void mergeSort(ListNodePosi(T)&, int);
+    void mergeSort() {
+        mergeSort(header->succ, _size);
+    }
     void merge(List<T>& L) {
         merge(begin(), _size, L, L.first, L.size);
-    }
-    void sort() {
-        sort(begin(), _size);
     }
     int deduplicate();//无序去重
     int uniquify();//有序去重
@@ -100,4 +102,15 @@ public:
 #include "destructor.cpp"
 #include "clear.cpp"
 #include "remove.cpp"
+#include "bracket.cpp"
+#include "constructorByCopy.cpp"
+#include "copyNode.cpp"
+#include "deduplicate.cpp"
+#include "find.cpp"
+#include "search.cpp"
+#include "mergeSort.cpp"
+#include "merge.cpp"
+#include "selectMax.cpp"
+#include "reverse.cpp"
+
 #endif //DSA_LIST_H

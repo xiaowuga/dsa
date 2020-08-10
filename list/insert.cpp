@@ -23,5 +23,5 @@ ListNodePosi(T) List<T>::insertA(ListNodePosi(T)p, T const& e) {
 template <typename T>
 ListNodePosi(T) List<T>::insertB(ListNodePosi(T)p, T const& e) {
     _size++;
-    return p->insertAspred(e);//e当作p的前驱插入（Before）
+    return p->insertAsPred(e);//e当作p的前驱插入（Before）
 }
