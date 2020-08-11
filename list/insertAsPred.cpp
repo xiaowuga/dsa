@@ -8,7 +8,8 @@ template <typename T> //将e紧靠当前节点之前插入于当前节点所属�
 
 ListNodePosi(T) ListNode<T>::insertAsPred ( T const& e ) {
     ListNodePosi(T) x = new ListNode (e, pred, this); //创建新节点
-    pred->succ = x; pred = x; //设置正向链接
+    pred->succ = x;
+    pred = x; //设置正向链接
 
     return x; //返回新节点的位置
 

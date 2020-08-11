@@ -37,6 +37,7 @@ protected:
     int clear();
     void copyNodes(ListNodePosi(T), int);
     void merge(ListNodePosi(T)&, int, List<T>&, ListNodePosi(T), int);
+    void mergeSort(ListNodePosi(T)&, int);
     void selectionSort(ListNodePosi(T), int);
     void insertSort(ListNodePosi(T), int);
 
@@ -80,12 +81,11 @@ public:
     ListNodePosi(T) insertA(ListNodePosi(T) p, T const& e);
     ListNodePosi(T) insertB(ListNodePosi(T) p, T const& e);
     T remove(ListNodePosi(T)p);
-    void mergeSort(ListNodePosi(T)&, int);
     void mergeSort() {
         mergeSort(header->succ, _size);
     }
     void merge(List<T>& L) {
-        merge(begin(), _size, L, L.first, L.size);
+        merge(begin(), _size, L, L.begin(), L.size());
     }
     int deduplicate();//无序去重
     int uniquify();//有序去重

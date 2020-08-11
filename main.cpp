@@ -7,7 +7,7 @@
 using namespace std;
 void test() {
     List<int>list;
-    for(int i = 0; i < 15; i++) {
+    for(int i = 1; i < 7; i++) {
         list.insertAsFirst(i);
     }
     for(ListNodePosi(int) p = list.begin(); p != list.end(); p = p->succ) {

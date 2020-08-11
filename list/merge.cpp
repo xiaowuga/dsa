@@ -6,16 +6,13 @@ template <typename T>
 void List<T>::merge(ListNodePosi(T)& p, int n, List<T>& L, ListNodePosi(T) q, int m) {
     ListNodePosi(T) pp = p->pred;
     while(0 < m) {
-        if(0 < n && p->data <= q->data) {
-            p = p->succ;
-            if(q == p) {
+        if((0 < n) && (p->data <= q->data)) {
+            if(q == (p = p->succ)) {
                 break;
-            } else {
-                n--;
             }
+            n--;
         } else {
-            q = q->succ;
-            insertB(p, L.remove(q->pred));
+            insertB(p, L.remove((q = q->succ)->pred));
             m--;
         }
     }
