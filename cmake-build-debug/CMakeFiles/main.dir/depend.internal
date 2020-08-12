@@ -13,6 +13,7 @@ CMakeFiles/main.dir/main.cpp.o
  /Users/xiaowuga/Desktop/github/dsa/list/insert.cpp
  /Users/xiaowuga/Desktop/github/dsa/list/insertAsPred.cpp
  /Users/xiaowuga/Desktop/github/dsa/list/insertAsSucc.cpp
+ /Users/xiaowuga/Desktop/github/dsa/list/insertSort.cpp
  /Users/xiaowuga/Desktop/github/dsa/list/list.h
  /Users/xiaowuga/Desktop/github/dsa/list/merge.cpp
  /Users/xiaowuga/Desktop/github/dsa/list/mergeSort.cpp
@@ -20,4 +21,6 @@ CMakeFiles/main.dir/main.cpp.o
  /Users/xiaowuga/Desktop/github/dsa/list/reverse.cpp
  /Users/xiaowuga/Desktop/github/dsa/list/search.cpp
  /Users/xiaowuga/Desktop/github/dsa/list/selectMax.cpp
+ /Users/xiaowuga/Desktop/github/dsa/list/selectionSort.cpp
+ /Users/xiaowuga/Desktop/github/dsa/list/uniquify.cpp
  /Users/xiaowuga/Desktop/github/dsa/main.cpp

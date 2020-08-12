@@ -36,8 +36,8 @@ protected:
     void init();
     int clear();
     void copyNodes(ListNodePosi(T), int);
-    void merge(ListNodePosi(T)&, int, List<T>&, ListNodePosi(T), int);
-    void mergeSort(ListNodePosi(T)&, int);
+    ListNodePosi(T) merge(ListNodePosi(T), int, ListNodePosi(T), int);
+    ListNodePosi(T) mergeSort(ListNodePosi(T), int);
     void selectionSort(ListNodePosi(T), int);
     void insertSort(ListNodePosi(T), int);
 
@@ -82,10 +82,13 @@ public:
     ListNodePosi(T) insertB(ListNodePosi(T) p, T const& e);
     T remove(ListNodePosi(T)p);
     void mergeSort() {
-        mergeSort(header->succ, _size);
+        header->succ = mergeSort(begin(), _size);
     }
-    void merge(List<T>& L) {
-        merge(begin(), _size, L, L.begin(), L.size());
+    void selectSort() {
+        selectionSort(begin(), _size);
+    }
+    void insertionSort() {
+        insertSort(begin(), _size);
     }
     int deduplicate();//无序去重
     int uniquify();//有序去重
@@ -108,9 +111,11 @@ public:
 #include "deduplicate.cpp"
 #include "find.cpp"
 #include "search.cpp"
-#include "mergeSort.cpp"
-#include "merge.cpp"
 #include "selectMax.cpp"
 #include "reverse.cpp"
-
+#include "merge.cpp"
+#include "mergeSort.cpp"
+#include "selectionSort.cpp"
+#include "insertSort.cpp"
+#include "uniquify.cpp"
 #endif //DSA_LIST_H

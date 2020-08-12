@@ -12,6 +12,7 @@ CMakeFiles/main.dir/main.cpp.o: ../list/initialize.cpp
 CMakeFiles/main.dir/main.cpp.o: ../list/insert.cpp
 CMakeFiles/main.dir/main.cpp.o: ../list/insertAsPred.cpp
 CMakeFiles/main.dir/main.cpp.o: ../list/insertAsSucc.cpp
+CMakeFiles/main.dir/main.cpp.o: ../list/insertSort.cpp
 CMakeFiles/main.dir/main.cpp.o: ../list/list.h
 CMakeFiles/main.dir/main.cpp.o: ../list/merge.cpp
 CMakeFiles/main.dir/main.cpp.o: ../list/mergeSort.cpp
@@ -19,5 +20,7 @@ CMakeFiles/main.dir/main.cpp.o: ../list/remove.cpp
 CMakeFiles/main.dir/main.cpp.o: ../list/reverse.cpp
 CMakeFiles/main.dir/main.cpp.o: ../list/search.cpp
 CMakeFiles/main.dir/main.cpp.o: ../list/selectMax.cpp
+CMakeFiles/main.dir/main.cpp.o: ../list/selectionSort.cpp
+CMakeFiles/main.dir/main.cpp.o: ../list/uniquify.cpp
 CMakeFiles/main.dir/main.cpp.o: ../main.cpp
 

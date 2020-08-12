@@ -28,6 +28,8 @@
 
 /Users/xiaowuga/Desktop/github/dsa/list/insertAsSucc.cpp
 
+/Users/xiaowuga/Desktop/github/dsa/list/insertSort.cpp
+
 /Users/xiaowuga/Desktop/github/dsa/list/list.h
 insert.cpp
 /Users/xiaowuga/Desktop/github/dsa/list/insert.cpp
@@ -55,14 +57,20 @@ find.cpp
 /Users/xiaowuga/Desktop/github/dsa/list/find.cpp
 search.cpp
 /Users/xiaowuga/Desktop/github/dsa/list/search.cpp
-mergeSort.cpp
-/Users/xiaowuga/Desktop/github/dsa/list/mergeSort.cpp
-merge.cpp
-/Users/xiaowuga/Desktop/github/dsa/list/merge.cpp
 selectMax.cpp
 /Users/xiaowuga/Desktop/github/dsa/list/selectMax.cpp
 reverse.cpp
 /Users/xiaowuga/Desktop/github/dsa/list/reverse.cpp
+merge.cpp
+/Users/xiaowuga/Desktop/github/dsa/list/merge.cpp
+mergeSort.cpp
+/Users/xiaowuga/Desktop/github/dsa/list/mergeSort.cpp
+selectionSort.cpp
+/Users/xiaowuga/Desktop/github/dsa/list/selectionSort.cpp
+insertSort.cpp
+/Users/xiaowuga/Desktop/github/dsa/list/insertSort.cpp
+uniquify.cpp
+/Users/xiaowuga/Desktop/github/dsa/list/uniquify.cpp
 
 /Users/xiaowuga/Desktop/github/dsa/list/merge.cpp
 
@@ -75,6 +83,10 @@ reverse.cpp
 /Users/xiaowuga/Desktop/github/dsa/list/search.cpp
 
 /Users/xiaowuga/Desktop/github/dsa/list/selectMax.cpp
+
+/Users/xiaowuga/Desktop/github/dsa/list/selectionSort.cpp
+
+/Users/xiaowuga/Desktop/github/dsa/list/uniquify.cpp
 
 /Users/xiaowuga/Desktop/github/dsa/main.cpp
 iostream

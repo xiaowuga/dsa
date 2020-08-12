@@ -3,7 +3,7 @@
 //
 // 有序列表的归并：当前列表中自p起的n个元素，与列表L中自q起的m个元素归并
 template <typename T>
-void List<T>::merge(ListNodePosi(T)& p, int n, List<T>& L, ListNodePosi(T) q, int m) {
+ListNodePosi(T) List<T>::merge(ListNodePosi(T) p, int n, ListNodePosi(T) q, int m) {
     ListNodePosi(T) pp = p->pred;
     while(0 < m) {
         if((0 < n) && (p->data <= q->data)) {
@@ -12,9 +12,9 @@ void List<T>::merge(ListNodePosi(T)& p, int n, List<T>& L, ListNodePosi(T) q, in
             }
             n--;
         } else {
-            insertB(p, L.remove((q = q->succ)->pred));
+            insertB(p, remove((q = q->succ)->pred));
             m--;
         }
     }
-    p = pp->succ;
+    return pp->succ;
 }
