@@ -40,6 +40,7 @@ protected:
     ListNodePosi(T) mergeSort(ListNodePosi(T), int);
     void selectionSort(ListNodePosi(T), int);
     void insertSort(ListNodePosi(T), int);
+    void quickSort(ListNodePosi(T), ListNodePosi(T));
 
     // 构造函数
 public:
@@ -62,7 +63,7 @@ public:
     ListNodePosi(T) rbegin() const { return trailer->pred;}
     ListNodePosi(T) end() const { return trailer;}
     ListNodePosi(T) rend() const { return header;}
-    bool volid(ListNodePosi(T)p) {
+    bool valid(ListNodePosi(T)p) {
         return p && (trailer != p) && (header != p);
     }
     ListNodePosi(T) find(T const & e) const {
@@ -87,16 +88,17 @@ public:
     void selectSort() {
         selectionSort(begin(), _size);
     }
-    void insertionSort() {
+    void insertSort() {
         insertSort(begin(), _size);
+    }
+    void quickSort() {
+        quickSort(begin(), rbegin());
     }
     int deduplicate();//无序去重
     int uniquify();//有序去重
     void reverse();//前后倒置
-    void traverse(void(*)(T&));//遍历，一次实施visit操作（函数指针，只读或局部性修改）
-    template<typename VST> //操作器
-    void traverse(VST&); //遍历，依次实施visit操作（函数对象，可全局性修改）
-
+    void moveA(ListNodePosi(T) p, ListNodePosi(T) q);
+    void moveB(ListNodePosi(T) p, ListNodePosi(T) q);
 };
 #include "insert.cpp"
 #include "initialize.cpp"
@@ -118,4 +120,6 @@ public:
 #include "selectionSort.cpp"
 #include "insertSort.cpp"
 #include "uniquify.cpp"
+#include "move.cpp"
+#include "quickSort.cpp"
 #endif //DSA_LIST_H

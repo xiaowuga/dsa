@@ -16,6 +16,8 @@ CMakeFiles/main.dir/main.cpp.o: ../list/insertSort.cpp
 CMakeFiles/main.dir/main.cpp.o: ../list/list.h
 CMakeFiles/main.dir/main.cpp.o: ../list/merge.cpp
 CMakeFiles/main.dir/main.cpp.o: ../list/mergeSort.cpp
+CMakeFiles/main.dir/main.cpp.o: ../list/move.cpp
+CMakeFiles/main.dir/main.cpp.o: ../list/quickSort.cpp
 CMakeFiles/main.dir/main.cpp.o: ../list/remove.cpp
 CMakeFiles/main.dir/main.cpp.o: ../list/reverse.cpp
 CMakeFiles/main.dir/main.cpp.o: ../list/search.cpp

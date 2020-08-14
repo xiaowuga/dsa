@@ -71,10 +71,18 @@ insertSort.cpp
 /Users/xiaowuga/Desktop/github/dsa/list/insertSort.cpp
 uniquify.cpp
 /Users/xiaowuga/Desktop/github/dsa/list/uniquify.cpp
+move.cpp
+/Users/xiaowuga/Desktop/github/dsa/list/move.cpp
+quickSort.cpp
+/Users/xiaowuga/Desktop/github/dsa/list/quickSort.cpp
 
 /Users/xiaowuga/Desktop/github/dsa/list/merge.cpp
 
 /Users/xiaowuga/Desktop/github/dsa/list/mergeSort.cpp
+
+/Users/xiaowuga/Desktop/github/dsa/list/move.cpp
+
+/Users/xiaowuga/Desktop/github/dsa/list/quickSort.cpp
 
 /Users/xiaowuga/Desktop/github/dsa/list/remove.cpp
 
@@ -89,7 +97,7 @@ uniquify.cpp
 /Users/xiaowuga/Desktop/github/dsa/list/uniquify.cpp
 
 /Users/xiaowuga/Desktop/github/dsa/main.cpp
-iostream
+bits/stdc++.h
 -
 list/list.h
 /Users/xiaowuga/Desktop/github/dsa/list/list.h

@@ -12,7 +12,8 @@ ListNodePosi(T) List<T>::merge(ListNodePosi(T) p, int n, ListNodePosi(T) q, int 
             }
             n--;
         } else {
-            insertB(p, remove((q = q->succ)->pred));
+            //insertB(p, remove((q = q->succ)->pred));
+            moveB(p,(q = q->succ)->pred);
             m--;
         }
     }
