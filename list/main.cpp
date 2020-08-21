@@ -2,7 +2,7 @@
 // Created by 小乌嘎 on 2020/8/9.
 //
 #include <bits/stdc++.h>
-#include "list/list.h"
+#include "list.h"
 using namespace std;
 void test() {
     List<int>list;
