@@ -88,6 +88,12 @@ public:
 #include "shrink.cpp"
 #include "bracket.cpp"
 #include "unosrt.cpp"
+#include "find.cpp"
+#include "insert.cpp"
+#include "remove.cpp"
+#include "deduplicate.cpp"
+#include "disordered.cpp"
+#include "uniquify.cpp"
 #endif
 
 //DSA_VECTOR_H
