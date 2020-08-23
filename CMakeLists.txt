@@ -19,6 +19,7 @@ PUBLIC
 add_executable(main1)
 target_sources(main1
 PUBLIC
+        fibonacci
         vector
         vector/main.cpp
 )

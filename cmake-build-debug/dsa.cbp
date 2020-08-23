@@ -164,6 +164,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/xiaowuga/Desktop/github/dsa/fibonacci">
+			<Option target="main1"/>
+		</Unit>
 		<Unit filename="/Users/xiaowuga/Desktop/github/dsa/list">
 			<Option target="main"/>
 		</Unit>
